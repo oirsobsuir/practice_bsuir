@@ -12,6 +12,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 16px;
+}
 
 .not-found {
     margin-top: -11px;
@@ -22,10 +25,11 @@
     box-shadow: 31px 31px #434244;
     border: 1px solid #434244;
     border-radius: 20px;
-    position: absolute;
+    margin: 50px;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .not-found__header {
@@ -114,135 +118,57 @@
     align-items: center;
 }
 
-@keyframes moveDiagonally {
+@keyframes moveRem {
     0% {
-        transform: translatex(-5.6vw) translatey(-5.6vw)
+        transform: translatex(-5.6rem) translatey(-5.6rem)
     }
 
     12.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3;
+        text-shadow: -0.7rem -0.7rem #8AF9C3;
     }
 
     25% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04;
     }
 
     37.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04, -2.1rem -2.1rem #E47AFE;
     }
 
     50% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04, -2.1rem -2.1rem #E47AFE, -2.8rem -2.8rem #8AF9C3;
     }
 
     62.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04, -2.1rem -2.1rem #E47AFE, -2.8rem -2.8rem #8AF9C3, -3.5rem -3.5rem #FAEC04;
     }
 
     75% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04, -2.1rem -2.1rem #E47AFE, -2.8rem -2.8rem #8AF9C3, -3.5rem -3.5rem #FAEC04, -4.2rem -4.2rem #E47AFE;
     }
 
     87.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE, -4.9vw -4.9vw #8AF9C3;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04, -2.1rem -2.1rem #E47AFE, -2.8rem -2.8rem #8AF9C3, -3.5rem -3.5rem #FAEC04, -4.2rem -4.2rem #E47AFE, -4.9rem -4.9rem #8AF9C3;
     }
 
     100% {
         transform: translatex(0) translatey(0);
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE, -4.9vw -4.9vw #8AF9C3, -5.6vw -5.6vw #FAEC04;
-    }
-}
-
-@keyframes moveDiagonally-height {
-    0% {
-        transform: scale(0.5) translatex(-5.6vw) translatey(-5.6vw)
-    }
-
-    12.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3;
-    }
-
-    25% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04;
-    }
-
-    37.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE;
-    }
-
-    50% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3;
-    }
-
-    62.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04;
-    }
-
-    75% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE;
-    }
-
-    87.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE, -4.9vw -4.9vw #8AF9C3;
-    }
-
-    100% {
-        transform: scale(0.5) translatex(0) translatey(0);
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE, -4.9vw -4.9vw #8AF9C3, -5.6vw -5.6vw #FAEC04;
-    }
-}
-
-@keyframes moveDiagonally-mobile {
-    0% {
-        transform: scale(1.5) translatex(-5.6vw) translatey(-5.6vw)
-    }
-
-    12.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3;
-    }
-
-    25% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04;
-    }
-
-    37.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE;
-    }
-
-    50% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3;
-    }
-
-    62.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04;
-    }
-
-    75% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE;
-    }
-
-    87.5% {
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE, -4.9vw -4.9vw #8AF9C3;
-    }
-
-    100% {
-        transform: scale(1.5) translatex(0) translatey(0);
-        text-shadow: -0.7vw -0.7vw #8AF9C3, -1.4vw -1.4vw #FAEC04, -2.1vw -2.1vw #E47AFE, -2.8vw -2.8vw #8AF9C3, -3.5vw -3.5vw #FAEC04, -4.2vw -4.2vw #E47AFE, -4.9vw -4.9vw #8AF9C3, -5.6vw -5.6vw #FAEC04;
+        text-shadow: -0.7rem -0.7rem #8AF9C3, -1.4rem -1.4rem #FAEC04, -2.1rem -2.1rem #E47AFE, -2.8rem -2.8rem #8AF9C3, -3.5rem -3.5rem #FAEC04, -4.2rem -4.2rem #E47AFE, -4.9rem -4.9rem #8AF9C3, -5.6rem -5.6rem #FAEC04;
     }
 }
 
 .error-code {
     display: inline-block;
     font-family: 'Roboto-Bold', sans-serif;
-    font-size: 20vw;
+    font-size: 18rem;
     color: #9575FC;
     -webkit-text-stroke: 1px black;
-    animation: moveDiagonally 1.2s linear forwards;
+    animation: moveRem 1.2s linear forwards;
 }
 
 .error-message {
     max-width: 800px;
-    font-size: 25px;
+    font-size: 1.6rem;
     font-family: "Roboto-Regular";
     display: flex;
     flex-direction: column;
@@ -261,16 +187,11 @@
 }
 
 @media only screen and (max-width: 3840px) {
-    .error-message {
-        font-size: 35px;
-    }
+
 }
 
 @media only screen and (max-width: 1920px) {
 
-    .error-message {
-        font-size: 25px;
-    }
 }
 
 @media only screen and (max-width: 1240px) {

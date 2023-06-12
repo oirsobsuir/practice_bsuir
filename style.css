@@ -43,6 +43,8 @@
 }
 
 .url-line {
+    display: flex;
+    gap: 15px;
     height: 33px;
     background-color: #E47AFE;
     border: 1px solid black;
@@ -271,7 +273,7 @@
     }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 900px) {
     .not-found__main {
         padding: 0 50px;
     }

@@ -14,19 +14,18 @@
 }
 
 .not-found {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: -11px;
 }
 
 .not-found__inner {
     width: 85%;
-    min-height: 600px;
     box-shadow: 31px 31px #434244;
     border: 1px solid #434244;
     border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .not-found__header {
@@ -105,9 +104,8 @@
 }
 
 .not-found__main {
-    padding: 0 100px;
+    padding: 1px 100px;
     height: 75vh;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,6 +191,7 @@
 }
 
 .error-code {
+    display: inline-block;
     font-family: 'Roboto-Bold', sans-serif;
     font-size: 20vw;
     color: #9575FC;
@@ -204,6 +203,8 @@
     max-width: 800px;
     font-size: 25px;
     font-family: "Roboto-Regular";
+    display: flex;
+    flex-direction: column;
 }
 
 .error-message strong {
@@ -216,6 +217,19 @@
     display: inline-block;
     line-height: 1.3;
     margin-left: 40px;
+}
+
+@media only screen and (max-width: 3840px) {
+    .error-message {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+
+    .error-message {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -249,7 +263,7 @@
     }
 
     .error-code {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .error-message {
@@ -257,7 +271,7 @@
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1020px) {
     .not-found__main {
         padding: 0 50px;
     }
@@ -272,6 +286,7 @@
 
 
     .error-code {
+        font-size: 20vw;
         animation: none;
         animation: moveDiagonally-mobile 1.2s linear forwards;
     }
@@ -281,23 +296,6 @@
     }
 }
 
-@media only screen and (max-height: 920px) {
-    .not-found__main {
-        padding: 0 50px;
-    }
-
-    .not-found__header-left {
-        width: 70%;
-    }
-
-    .not-found__header-right {
-        width: 30%;
-    }
-
-    .error-message {
-        font-size: 17px;
-    }
-}
 
 @media only screen and (max-width: 868px) {
     .error-message {
@@ -368,4 +366,87 @@
         font-size: 9px;
     }
 
+}
+
+
+@media only screen and (max-width:1000px) and (max-height: 500px) {
+    .not-found__inner {
+        box-shadow: 13px 13px #434244;
+    }
+
+    .not-found__header {
+        height: 18px;
+        padding: 18px 15px;
+    }
+
+    .url-line {
+        height: 18px;
+        border-radius: 5px;
+    }
+
+    .window-control-buttons {
+        height: 18px;
+
+    }
+
+    .collapse-button,
+    .expand-button {
+        width: 10px;
+    }
+
+    .expand-button {
+        height: 10px;
+    }
+
+    .close-button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .error-code {
+        animation: moveDiagonally 1.2s linear forwards;
+        margin-bottom: 0;
+    }
+
+    .error-message {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:660px) and (max-height: 290px) {
+    .not-found__inner {
+        box-shadow: 11px 11px #434244;
+        border-radius: 10px;
+    }
+
+    .not-found__header {
+        height: 13px;
+        padding: 13px 11px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .url-line {
+        height: 13px;
+        border-radius: 5px;
+    }
+
+    .window-control-buttons {
+        height: 13px;
+    }
+
+    .error-code {
+        animation: moveDiagonally 1.2s linear forwards;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        line-height: 0.9;
+    }
+
+    .error-message {
+        font-size: 8px;
+    }
+
+    .error-message strong {
+        margin-bottom: 5px;
+    }
 }

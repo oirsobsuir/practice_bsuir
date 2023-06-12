@@ -18,7 +18,7 @@ html {
 }
 
 .not-found {
-    margin-top: -11px;
+    /* margin-top: -11px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ html {
     box-shadow: 31px 31px #434244;
     border: 1px solid #434244;
     border-radius: 20px;
-    margin: 5px 50px;
+    margin: 0px 50px;
 
     /* position: absolute;
     top: 50%;

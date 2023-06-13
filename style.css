@@ -180,7 +180,7 @@ html {
 
 .error-message strong {
     display: inline-block;
-    line-height: 0.95;
+   /* line-height: 0.95;*/
     margin-bottom: 15px;
 }
 
